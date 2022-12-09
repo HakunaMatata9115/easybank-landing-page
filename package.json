@@ -1,0 +1,24 @@
+{
+  "name": "easybank-landing-page",
+  "version": "1.0.0",
+  "description": "Using HTML, SCSS, and JavaScript to build the bank's responsive landing page.",
+  "main": "app/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass": "node-sass -w app/styles/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyeyoung-Lucia/easybank-landing-page.git"
+  },
+  "author": "Hyeyoung Lucia Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyeyoung-Lucia/easybank-landing-page/issues"
+  },
+  "homepage": "https://github.com/Hyeyoung-Lucia/easybank-landing-page#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
