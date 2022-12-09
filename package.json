@@ -20,5 +20,11 @@
   "homepage": "https://github.com/Hyeyoung-Lucia/easybank-landing-page#readme",
   "dependencies": {
     "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^14.16.0",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
