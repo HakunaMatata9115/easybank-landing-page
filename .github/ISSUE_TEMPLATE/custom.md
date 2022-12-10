@@ -1,7 +1,5 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
-title: "[Label] 이슈 제목"
+title: "[Label] Issue's title"
 labels: ''
 assignees: ''
 
