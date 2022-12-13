@@ -16,3 +16,6 @@
 
 # Avoid accidental node_modules upload 
 node_modules
+
+# Etc.
+.vscode
