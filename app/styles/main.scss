@@ -3,6 +3,5 @@
 @import './base/normalize';
 @import './base/reset';
 
-* {
-  font-family: 'Public Sans', sans-serif;
-}
+@import './abstracts/variables';
+@import './abstracts/mixins';
