@@ -1,0 +1,22 @@
+%btn-base {
+  @include inline-flexbox;
+  padding: 0 33px;
+  font-weight: 700;
+  border-radius: 22px;
+  width: 163px;
+  height: 44px;
+  transition: background-color 200ms ease-in-out;
+}
+
+//NOTE: Button style and state
+.btn-fill-primary {
+  @extend %btn-base;
+  @include text-style(14);
+  color: $white;
+  background-color: $lime-green;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.4;
+  }
+}
