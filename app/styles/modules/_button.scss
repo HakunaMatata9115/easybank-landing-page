@@ -13,7 +13,7 @@
   @extend %btn-base;
   @include text-style(14);
   color: $white;
-  background-color: $lime-green;
+  background: $button-color;
 
   &:hover {
     cursor: pointer;
