@@ -1,0 +1,44 @@
+.gnb {
+  @include flexbox(between);
+  width: auto;
+  height: 64px;
+  padding: 0 24px;
+
+  .log {
+    a {
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: 139px;
+      height: auto;
+    }
+  }
+}
+@include responsive(D) {
+  .gnb {
+    height: 80px;
+    padding: 0 165px;
+
+    &-nav {
+      &-list {
+        @include flexbox;
+      }
+      &-item {
+        @include text-style(14);
+        font-weight: 400;
+        margin-right: 30px;
+        transition: all 200ms ease-in-out;
+        &:hover {
+          cursor: pointer;
+          color: $dark-blue;
+          border-bottom: 4px solid $lime-green;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
