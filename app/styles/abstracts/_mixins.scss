@@ -1,11 +1,11 @@
 // Responsive
 @mixin responsive($screen) {
-  @if ($screen =='M') {
+  @if ($screen == 'M') {
     @media screen and (max-width: $md-breakpoint) {
       @content;
     }
   }
-  @if ($screen =='D') {
+  @if ($screen == 'D') {
     @media screen and (min-width: $lg-breakpoint) {
       @content;
     }
@@ -124,7 +124,7 @@
     @include text-style-56;
   }
 
-  @if (type-of($color)==color) {
+  @if (type-of($color) ==color) {
     color: $color;
   }
 }
@@ -138,7 +138,7 @@
   }
 }
 
-@mixin pos-center-Y($type: absolute) {
+@mixin pos-center-y($type: absolute) {
   @if ($type ==fixed or $type ==absolute) {
     position: $type;
     top: 50%;
@@ -146,7 +146,7 @@
   }
 }
 
-@mixin pos-center-x($type: absolute) {
+@mixin pos-center-xy($type: absolute) {
   @if ($type ==fixed or $type ==absolute) {
     position: $type;
     left: 50%;
