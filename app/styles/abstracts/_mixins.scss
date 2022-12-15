@@ -1,11 +1,11 @@
 // Responsive
 @mixin responsive($screen) {
-  @if ($screen == 'M') {
-    @media screen and (min-width: $sm-breakpoint) {
+  @if ($screen =='M') {
+    @media screen and (max-width: $md-breakpoint) {
       @content;
     }
   }
-  @if ($screen == 'D') {
+  @if ($screen =='D') {
     @media screen and (min-width: $lg-breakpoint) {
       @content;
     }
@@ -48,6 +48,7 @@
   line-height: $line-height-18;
   letter-spacing: $letter-spacing-18;
 }
+
 @mixin text-style-20() {
   font-size: $font-size-20;
   line-height: $line-height-20;
@@ -79,58 +80,58 @@
 }
 
 @mixin text-style($size, $color: false) {
-  @if ($size == 10) {
+  @if ($size ==10) {
     @include text-style-10;
   }
 
-  @if ($size == 14) {
+  @if ($size ==14) {
     @include text-style-14;
   }
 
-  @if ($size == 13) {
+  @if ($size ==13) {
     @include text-style-13;
   }
 
-  @if ($size == 15) {
+  @if ($size ==15) {
     @include text-style-15;
   }
 
-  @if ($size == 16) {
+  @if ($size ==16) {
     @include text-style-16;
   }
 
-  @if ($size == 18) {
+  @if ($size ==18) {
     @include text-style-18;
   }
 
-  @if ($size == 20) {
+  @if ($size ==20) {
     @include text-style-20;
   }
 
-  @if ($size == 24) {
+  @if ($size ==24) {
     @include text-style-24;
   }
 
-  @if ($size == 32) {
+  @if ($size ==32) {
     @include text-style-32;
   }
 
-  @if ($size == 40) {
+  @if ($size ==40) {
     @include text-style-40;
   }
 
-  @if ($size == 56) {
+  @if ($size ==56) {
     @include text-style-56;
   }
 
-  @if (type-of($color) == color) {
+  @if (type-of($color)==color) {
     color: $color;
   }
 }
 
 // Positions
 @mixin pos-center-x($type: absolute) {
-  @if ($type == fixed or $type == absolute) {
+  @if ($type ==fixed or $type ==absolute) {
     position: $type;
     left: 50%;
     transform: translateX(-50%);
@@ -138,7 +139,7 @@
 }
 
 @mixin pos-center-Y($type: absolute) {
-  @if ($type == fixed or $type == absolute) {
+  @if ($type ==fixed or $type ==absolute) {
     position: $type;
     top: 50%;
     transform: translateY(-50%);
@@ -146,7 +147,7 @@
 }
 
 @mixin pos-center-x($type: absolute) {
-  @if ($type == fixed or $type == absolute) {
+  @if ($type ==fixed or $type ==absolute) {
     position: $type;
     left: 50%;
     top: 50%;
