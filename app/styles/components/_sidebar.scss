@@ -3,6 +3,7 @@
   position: relative;
   z-index: $sidebar-level;
   width: $sidebar-width;
+  max-width: 990px;
   height: 265px;
   border-radius: 4px;
   color: $dark-blue;
