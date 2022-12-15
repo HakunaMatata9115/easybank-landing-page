@@ -1,0 +1,18 @@
+.gnb {
+  @include flexbox(between);
+  width: auto;
+  height: 64px;
+  padding: 0 24px;
+
+  .log {
+    a {
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: 139px;
+      height: auto
+    }
+  }
+}
