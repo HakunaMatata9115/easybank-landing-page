@@ -1,19 +1,16 @@
 .hero {
   &-images {
     &-bg {
-      position: relative;
       &-back {
-        display: block;
-        position: absolute;
+        position: relative;
         top: -75px;
         width: 100vw;
         min-height: 275px;
       }
 
       &-front {
-        display: block;
         position: absolute;
-        top: -115px;
+        top: -50px;
         padding: 0 24px;
         z-index: $bg-image-level;
         width: 100vw;
@@ -31,6 +28,7 @@
       @include text-style(40, $dark-blue);
       font-weight: 300;
       text-align: center;
+      margin-top: 30px;
       margin-bottom: 16px;
     }
 
@@ -44,6 +42,64 @@
 
     .btn-fill-primary {
       margin-bottom: 88px;
+    }
+  }
+}
+
+@include responsive(D) {
+  .main {
+    @include flexbox(between);
+  }
+
+  .hero {
+    max-height: 756px;
+
+    &-images {
+      position: relative;
+
+      &-bg {
+        display: inline-block;
+
+        &-back {
+          top: -240px;
+          left: 550px;
+          width: 1133px;
+          height: auto;
+        }
+
+        &-front {
+          top: -120px;
+          right: -260px;
+          width: 750px;
+          height: auto;
+        }
+      }
+    }
+
+    &-main {
+      display: inline-block;
+      position: relative;
+      top: -830px;
+      padding: 0 120px 0 165px;
+
+      &-title {
+        @include text-style(48, $dark-blue);
+        text-align: left;
+        margin-bottom: 24px;
+      }
+
+      &-description {
+        @include text-style(16);
+        text-align: left;
+        max-width: 500px;
+        height: 84px;
+        padding: 0;
+        margin-bottom: 36px;
+      }
+
+      .btn-fill-primary {
+        margin-bottom: 170px;
+      }
     }
   }
 }
