@@ -1,0 +1,49 @@
+.hero {
+  &-images {
+    &-bg {
+      position: relative;
+      &-back {
+        display: block;
+        position: absolute;
+        top: -75px;
+        width: 100vw;
+        min-height: 275px;
+      }
+
+      &-front {
+        display: block;
+        position: absolute;
+        top: -115px;
+        padding: 0 24px;
+        z-index: $bg-image-level;
+        width: 100vw;
+        min-height: 280px;
+      }
+    }
+  }
+
+  &-main {
+    @include column-flexbox;
+    position: absolute;
+    top: 370px;
+
+    &-title {
+      @include text-style(40, $dark-blue);
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    &-description {
+      @include text-style(15);
+      font-weight: 400;
+      text-align: center;
+      padding: 0 24px;
+      margin-bottom: 32px;
+    }
+
+    .btn-fill-primary {
+      margin-bottom: 88px;
+    }
+  }
+}
