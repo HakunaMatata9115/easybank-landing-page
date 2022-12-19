@@ -1,6 +1,7 @@
 .sidebar {
-  $sidebar-width: auto;
-  position: relative;
+  $sidebar-width: 85vw;
+  position: fixed;
+  top: 60px;
   z-index: $sidebar-level;
   width: $sidebar-width;
   max-width: 990px;
@@ -8,7 +9,7 @@
   border-radius: 4px;
   color: $dark-blue;
   background-color: $white;
-  margin: 24px 24px;
+  margin: 24px 27px;
   visibility: hidden;
   transition: visibility 300ms ease-in-out;
 
@@ -36,7 +37,7 @@
 
 .overlay {
   position: fixed;
-  top: 64px;
+  top: 0px;
   left: 0;
   z-index: $overlay-level;
   width: 100%;
