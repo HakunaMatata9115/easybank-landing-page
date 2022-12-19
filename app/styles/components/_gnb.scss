@@ -1,5 +1,9 @@
 .gnb {
   @include flexbox(between);
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: $white;
   width: auto;
   height: 64px;
   padding: 0 24px;
@@ -29,6 +33,7 @@
         @include text-style(14);
         font-weight: 400;
         margin-right: 30px;
+        padding: 28px 0 20px 0;
         transition: all 200ms ease-in-out;
         &:hover {
           cursor: pointer;
