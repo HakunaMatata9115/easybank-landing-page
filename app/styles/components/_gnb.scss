@@ -3,8 +3,9 @@
   position: sticky;
   top: 0;
   right: 0;
+  z-index: $gnb-level;
   background-color: $white;
-  width: auto;
+  width: 100vw;
   height: 64px;
   padding: 0 24px;
 
