@@ -1,0 +1,53 @@
+.about {
+  @include column-flexbox;
+  text-align: center;
+  position: relative;
+  top: 165px;
+  margin-top: 152px;
+  background-color: $light-grayish-blue;
+  padding: 64px 24px;
+
+  &-introduce {
+    margin-bottom: 54px;
+
+    &-title {
+      @include text-style(32);
+      font-weight: 300;
+      color: $dark-blue;
+      margin-bottom: 14px;
+    }
+
+    &-description {
+      @include text-style(15);
+      max-width: 450px;
+      margin-bottom: 56px;
+      color: $grayish-blue;
+    }
+  }
+
+  &-benefits-list {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-img {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 24px;
+    }
+
+    &-title {
+      @include text-style(20, $dark-blue);
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+
+    &-description {
+      @include text-style(15, $grayish-blue);
+      font-weight: 400;
+      max-width: 450px;
+    }
+  }
+}
