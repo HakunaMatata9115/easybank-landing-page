@@ -2,13 +2,12 @@
   @include column-flexbox;
   text-align: center;
   position: relative;
-  top: 165px;
-  margin-top: 152px;
+  top: 10px;
   background-color: $light-grayish-blue;
-  padding: 64px 24px;
+  padding: 62px 24px;
 
   &-introduce {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
 
     &-title {
       @include text-style(32);
@@ -20,13 +19,14 @@
     &-description {
       @include text-style(15);
       max-width: 450px;
-      margin-bottom: 56px;
       color: $grayish-blue;
     }
   }
 
   &-benefits-list {
     margin-bottom: 32px;
+    width: 327px;
+    height: 215px;
 
     &:last-child {
       margin-bottom: 0;

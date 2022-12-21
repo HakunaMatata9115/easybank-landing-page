@@ -2,27 +2,24 @@
   &-images {
     &-bg {
       &-back {
-        position: relative;
-        top: -75px;
         width: 100vw;
-        min-height: 275px;
+        height: 100vw;
       }
 
       &-front {
-        position: absolute;
-        top: -50px;
-        padding: 0 24px;
+        @include pos-center-x;
+        top: -16vw;
+        padding: 0 40px;
         z-index: $bg-image-level;
-        width: 100vw;
-        min-height: 280px;
+        width: auto;
+        height: 118vw;
       }
     }
   }
 
   &-main {
     @include column-flexbox;
-    position: absolute;
-    top: 370px;
+    padding: 0px 24px;
 
     &-title {
       @include text-style(40, $dark-blue);
@@ -36,7 +33,7 @@
       @include text-style(15);
       font-weight: 400;
       text-align: center;
-      padding: 0 24px;
+      max-width: 450px;
       margin-bottom: 32px;
     }
 
@@ -61,6 +58,7 @@
         display: inline-block;
 
         &-back {
+          position: relative;
           top: -240px;
           left: 550px;
           width: 1133px;
@@ -68,8 +66,8 @@
         }
 
         &-front {
-          top: -120px;
-          right: -260px;
+          top: -8.5vw;
+          left: 82.5vw;
           width: 750px;
           height: auto;
         }
