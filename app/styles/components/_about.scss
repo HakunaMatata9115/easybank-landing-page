@@ -51,3 +51,57 @@
     }
   }
 }
+
+@include responsive(D) {
+  .about {
+    text-align: left;
+    position: absolute;
+    top: 610px;
+    width: 100vw;
+    padding: 96px 0;
+    margin-top: 0;
+
+    &-introduce {
+      position: relative;
+      right: 245px;
+      margin-bottom: 72px;
+
+      &-title {
+        @include text-style(40);
+        margin-bottom: 16px;
+      }
+
+      &-description {
+        @include text-style(18);
+      }
+    }
+
+    &-benefits {
+      @include flexbox;
+    }
+
+    &-benefits-list {
+      margin-right: 30px;
+      width: 215px;
+      height: 278px;
+
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+
+      &-img {
+        margin-bottom: 40px;
+      }
+
+      &-title {
+        @include text-style(24);
+        margin-bottom: 26px;
+      }
+
+      &-description {
+        @include text-style(16);
+      }
+    }
+  }
+}
