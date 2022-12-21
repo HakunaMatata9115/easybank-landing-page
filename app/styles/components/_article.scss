@@ -20,6 +20,8 @@
     margin-bottom: 24px;
 
     img {
+      width: 327px;
+      height: 200px;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
     }
@@ -49,6 +51,52 @@
     &-title {
       display: flex;
       flex-direction: column-reverse;
+    }
+  }
+}
+
+@include responsive(D) {
+  .article {
+    @include pos-center-x;
+    top: 103vw;
+    padding: 80px 165px;
+    // z-index: -50;
+
+    &-title {
+      @include text-style(64);
+      font-weight: 300;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    &-content {
+      width: 17vw;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        width: 17vw;
+        height: 13vw;
+      }
+      &-title {
+        @include text-style(15);
+      }
+
+      &-description {
+        margin-bottom: 0;
+        width: 14vw;
+      }
+    }
+
+    &-feature {
+      @include flexbox;
+    }
+
+    &-group {
+      padding: 24px 20px;
     }
   }
 }
