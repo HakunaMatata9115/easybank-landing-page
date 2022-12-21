@@ -1,0 +1,54 @@
+.article {
+  padding: 88px 24px;
+  background-color: $very-light-gray;
+
+  &-title {
+    @include text-style(32, $dark-blue);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 327px;
+    height: auto;
+    background-color: $white;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &-title {
+      @include text-style(16, $dark-blue);
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+
+    &-author {
+      @include text-style(10);
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    &-description {
+      @include text-style(13);
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+  }
+
+  &-group {
+    padding: 24px 31px;
+
+    &-title {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
