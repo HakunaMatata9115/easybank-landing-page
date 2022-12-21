@@ -2,7 +2,6 @@
   @include flexbox(between);
   position: sticky;
   top: 0;
-  right: 0;
   z-index: $gnb-level;
   background-color: $white;
   width: 100vw;
