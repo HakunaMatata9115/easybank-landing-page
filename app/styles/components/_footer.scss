@@ -10,26 +10,29 @@
     margin-bottom: 32px;
   }
 
-  &-icon-socials {
+  &-ic-icon {
+    @include flexbox;
     margin-right: 95px;
     margin-left: 95px;
     margin-bottom: 32px;
     transition: color 200ms ease-in-out;
 
-    &:hover {
-      cursor: pointer;
-      color: $lime-green;
-    }
-
-    img {
-      display: inline-block;
+    &-item {
+      color: $white;
       margin-right: 16px;
+      transition: color 200ms ease-in-out;
 
       &:last-child {
         margin-right: 0;
       }
+
+      &:hover {
+        cursor: pointer;
+        color: $lime-green;
+      }
     }
   }
+
   &-nav {
     &-list {
       @include text-style(15, $white);
@@ -37,6 +40,7 @@
       margin-bottom: 32px;
       text-align: center;
     }
+
     &-item {
       margin-bottom: 8px;
       transition: color 200ms ease-in-out;
