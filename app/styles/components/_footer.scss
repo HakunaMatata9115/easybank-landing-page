@@ -1,0 +1,59 @@
+.footer {
+  @include column-flexbox;
+  background-color: $dark-blue;
+  padding: 40px 77px;
+
+  &-logo {
+    color: $white;
+    margin-left: 118px;
+    margin-right: 118px;
+    margin-bottom: 32px;
+  }
+
+  &-icon-socials {
+    margin-right: 95px;
+    margin-left: 95px;
+    margin-bottom: 32px;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: $lime-green;
+    }
+
+    img {
+      display: inline-block;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &-nav {
+    &-list {
+      @include text-style(15, $white);
+      font-weight: 400;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    &-item {
+      margin-bottom: 8px;
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: $lime-green;
+      }
+    }
+  }
+
+  &-btn {
+    margin-bottom: 24px;
+  }
+
+  &-copyright {
+    @include text-style(15, $white);
+    font-weight: 400;
+  }
+}
