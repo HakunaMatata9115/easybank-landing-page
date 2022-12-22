@@ -42,6 +42,8 @@
     }
 
     &-item {
+      @include text-style(15, $white);
+      font-weight: 400;
       margin-bottom: 8px;
       transition: color 200ms ease-in-out;
 
@@ -59,5 +61,70 @@
   &-copyright {
     @include text-style(15, $white);
     font-weight: 400;
+  }
+
+  &-bottom {
+    @include column-flexbox;
+    position: none;
+    right: 0;
+  }
+}
+
+@include responsive(D) {
+  .footer {
+    @include flexbox;
+    position: relative;
+    bottom: -88vw;
+    padding: 48px 165px;
+
+    &-logos {
+      position: absolute;
+      left: 12vw;
+      margin-right: 131px;
+    }
+
+    &-logo {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 55px;
+    }
+
+    &-ic-icon {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+
+      &-item {
+        margin-right: 13.33px;
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: $lime-green;
+        }
+      }
+    }
+
+    &-nav {
+      &-list {
+        @include flexbox;
+        margin-bottom: 0;
+        text-align: left;
+
+        &-top {
+          margin-right: 124px;
+        }
+      }
+    }
+
+    &-btn {
+      margin-bottom: 32px;
+    }
+
+    &-bottom {
+      align-items: flex-end;
+      position: absolute;
+      right: 12vw;
+    }
   }
 }
