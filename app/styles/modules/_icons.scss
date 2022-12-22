@@ -1,0 +1,34 @@
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'easybank' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-icon-facebook:before {
+  content: '\e90b';
+  color: currentColor;
+}
+.ic-icon-instagram:before {
+  content: '\e90d';
+  color: currentColor;
+}
+.ic-icon-pinterest:before {
+  content: '\e912';
+  color: currentColor;
+}
+.ic-icon-twitter:before {
+  content: '\e913';
+  color: currentColor;
+}
+.ic-icon-youtube:before {
+  content: '\e914';
+  color: currentColor;
+}
