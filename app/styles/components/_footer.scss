@@ -68,13 +68,26 @@
     position: none;
     right: 0;
   }
+
+  &-top-btn {
+    position: relative;
+    top: -543px;
+    color: $lime-green;
+    opacity: 0.4;
+    transition: opacity 200ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
 }
 
 @include responsive(D) {
   .footer {
     @include flexbox;
     position: relative;
-    bottom: -88vw;
+    bottom: -1235px;
     padding: 48px 165px;
 
     &-logos {
@@ -125,6 +138,10 @@
       align-items: flex-end;
       position: absolute;
       right: 12vw;
+    }
+
+    &-top-btn {
+      top: -220px;
     }
   }
 }
