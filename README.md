@@ -1,6 +1,6 @@
 # Frontend Mentor - Easybank landing page solution
 
-[Go to the project wiki :kr:](https://github.com/Hyeyoung-Lucia/easybank-landing-page.wiki.git)
+[Go to the project wiki :kr:](https://github.com/Hyeyoung-Lucia/easybank-landing-page/wiki)
 
 <p align="center">
   <img src="./assets/screenshots/screenshot.gif">
